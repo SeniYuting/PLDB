@@ -22,7 +22,7 @@ public class GetPlreserveparkinguser extends BaseAction {
 		request().setAttribute("table", "Plreserveparkinguser");
 
 		String[] tables = { "UserId", "Name", "Phone", "CarLicence", "CarType",
-				"Validity", "Plreserveparkinguser_pSpaceId", "Identity" };
+				"Validity", "PlParkingSpace_pSpaceId", "Identity" };
 		request().setAttribute("tables", tables);
 
 		List<Plreserveparkinguser> plreserveparkingusers = appService
