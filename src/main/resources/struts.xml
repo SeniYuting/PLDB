@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Struts2 DTD -->
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.devMode" value="true" />
+	<package name="process" extends="struts-default">
+
+		<action name="getPlblacklist" class="action.GetPlblacklist">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+		<action name="getPldealrecord" class="action.GetPldealrecord">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+		<action name="getPlmalfunctionrecord" class="action.GetPlmalfunctionrecord">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+		<action name="getPlparkingcar" class="action.GetPlparkingcar">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+		<action name="getPlparkingrecord" class="action.GetPlparkingrecord">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+		<action name="getPlparkingsensor" class="action.GetPlparkingsensor">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+		<action name="getPlparkingspace" class="action.GetPlparkingspace">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+		<action name="getPlreserveparkinguser" class="action.GetPlreserveparkinguser">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+		<action name="getPlrunrecord" class="action.GetPlrunrecord">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+		<action name="getPlsysuser" class="action.GetPlsysuser">
+			<result name="success">/pldb/jsp/index.jsp</result>
+		</action>
+
+		<action name="*">
+			<result>/{1}.jsp</result>
+		</action>
+	</package>
+</struts>

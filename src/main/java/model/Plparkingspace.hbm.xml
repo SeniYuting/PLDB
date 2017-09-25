@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Plparkingspace" table="plparkingspace">
+		<id name="pspaceid" type="int">
+			<column name="pspaceid" />
+			<generator class="assigned" />
+		</id>
+		<property name="resstatus" type="java.lang.String">
+			<column name="resstatus" />
+		</property>
+		<property name="cartype" type="java.lang.String">
+			<column name="cartype" />
+		</property>
+		<property name="ps_sid" type="int">
+			<column name="ps_sid" />
+		</property>
+		<property name="pc_tid" type="int">
+			<column name="pc_tid" />
+		</property>
+		<property name="identity" type="int">
+			<column name="identity" />
+		</property>
+	</class>
+</hibernate-mapping>

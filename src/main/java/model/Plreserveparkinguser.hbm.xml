@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Plreserveparkinguser" table="plreserveparkinguser">
+		<id name="userid" type="int">
+			<column name="userid" />
+			<generator class="assigned" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<property name="phone" type="java.lang.String">
+			<column name="phone" />
+		</property>
+		<property name="carlicence" type="java.lang.String">
+			<column name="carlicence" />
+		</property>
+		<property name="cartype" type="java.lang.String">
+			<column name="cartype" />
+		</property>
+		<property name="validity" type="java.sql.Date">
+			<column name="validity" />
+		</property>
+		<property name="plparkingspace_pspaceid" type="int">
+			<column name="plparkingspace_pspaceid" />
+		</property>
+		<property name="identity" type="int">
+			<column name="identity" />
+		</property>
+	</class>
+</hibernate-mapping>

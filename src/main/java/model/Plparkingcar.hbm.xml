@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Plparkingcar" table="plparkingcar">
+		<id name="tid" type="int">
+			<column name="tid" />
+			<generator class="assigned" />
+		</id>
+		<property name="carlicence" type="java.lang.String">
+			<column name="carlicence" />
+		</property>
+		<property name="cartype" type="java.lang.String">
+			<column name="cartype" />
+		</property>
+		<property name="carcolor" type="java.lang.String">
+			<column name="carcolor" />
+		</property>
+		<property name="itime" type="java.sql.Date">
+			<column name="itime" />
+		</property>
+		<property name="code" type="java.lang.String">
+			<column name="code" />
+		</property>
+		<property name="pickcount" type="int">
+			<column name="pickcount" />
+		</property>
+		<property name="identity" type="int">
+			<column name="identity" />
+		</property>
+	</class>
+</hibernate-mapping>
